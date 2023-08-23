@@ -2,9 +2,7 @@ vim.cmd([[packadd packer.nvim]])
 
 return require("packer").startup(function(use)
 	use({ "wbthomason/packer.nvim" })
-
 	use({ "nvim-telescope/telescope.nvim", tag = "0.1.2", requires = { { "nvim-lua/plenary.nvim" } } })
-
 	use({
 		"Shatur/neovim-ayu",
 		as = "ayu",
@@ -12,16 +10,11 @@ return require("packer").startup(function(use)
 			ColorMyPencils("ayu")
 		end,
 	})
-
 	use({ "github/copilot.vim" })
-
 	use({ "nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" } })
-
 	use({ "nvim-treesitter/playground" })
-
 	use({ "mbbill/undotree" })
 	use({ "tpope/vim-fugitive" })
-
 	use({
 		"VonHeikemen/lsp-zero.nvim",
 		branch = "v2.x",
