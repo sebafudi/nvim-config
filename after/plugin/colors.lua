@@ -1,1 +1,1 @@
-ColorMyPencils('ayu')
+ColorMyPencils("ayu")
