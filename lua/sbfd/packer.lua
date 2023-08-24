@@ -45,11 +45,6 @@ return require("packer").startup(function(use)
 	use({
 		"akinsho/toggleterm.nvim",
 		tag = "*",
-		config = function()
-			require("toggleterm").setup({
-				shell = "powershell",
-			})
-		end,
 	})
 	use({ "nvim-lualine/lualine.nvim" })
 	use({ "sbdchd/neoformat" })
