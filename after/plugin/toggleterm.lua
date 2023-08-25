@@ -1,5 +1,5 @@
 local system = vim.loop.os_uname().sysname
-local shell = system == "Darwin" and "zsh" or "powershell"
+local shell = system == "Linux" and "zsh" or "powershell"
 require("toggleterm").setup({
 	shell = shell,
 	start_in_insert = false,
